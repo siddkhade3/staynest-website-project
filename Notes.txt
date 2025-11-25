@@ -1,0 +1,16 @@
+*** Hotel booking/Renting Fullstack Responsive Website. (StayNest.com)
+
++++ We install nodejs/express for server and api 
++++ We install nodejs/ejs for templates
++++ we install  mongodb/mongoose for Database mangement
++++ Creating model folder to create listing
++++require path
+
++++ Installing method-ovveriding pakage for put and Delete request
+
+
+
+## Project Phase 1 (part c) ===>>>>
+
+
+++ Form Validations

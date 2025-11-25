@@ -1,0 +1,272 @@
+body{
+     font-family: "Plus Jakarta Sans", sans-serif !important;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+    
+}
+.container{
+    flex: 1;
+}
+/* Navbar */
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-regular{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    margin-left: 1rem;
+    color: #222222 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    margin-left: 1rem;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.f-info-socials,.f-info-links,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.f-info-socials i:hover {
+    color: #fe424d;; 
+    transform: scale(1.2);
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+
+/* Make collapsed mobile menu white when opened */
+.navbar-collapse {
+  background-color: white !important;  /* sets background for expanded menu */
+  border-radius: 0 0 10px 10px;        /* optional rounded bottom corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional shadow for depth */
+}
+
+/* Optional: ensure nav links stay visible */
+.navbar-collapse .nav-link {
+  color: #333 !important;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #007bff !important;
+}
+
+
+
+/* Cards */
+
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.card-text a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 400;
+}
+.listing-links{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* edit page */
+.add-btn{
+    color: #ffffff !important;
+    background-color: #fe424d !important;
+}
+
+/* show page */
+
+/* .show-img{
+    height: 60vh;
+    
+} */
+
+
+/* Reset & base styles */
+
+
+/* Heading */
+.show-h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Card container */
+.show-card {
+  max-width: 600px;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.show-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Card text */
+.show-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.show-card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Listing details */
+.show-ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.show-ul li {
+  padding: 12px 18px;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #555;
+  word-wrap: break-word;       /* Older support */
+  overflow-wrap: anywhere;     /* Modern browsers */
+  word-break: break-all;       /* Break long strings anywhere if needed */
+
+  /* Optional: keep box width consistent */
+  white-space: normal;
+}
+
+.show-ul li:last-child {
+  border-bottom: none;
+}
+
+/* Links and Buttons */
+.show-edit-btn {
+  display: flex;
+  width: 15%;
+  text-decoration: none;
+  background: #3498db;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+  margin: 10px auto;
+  margin-top: 3rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+
+.show-edit-btn:hover {
+  background: #2c82c9;
+}
+
+/* Delete button */
+.show-form-btn {
+  display: flex;             
+  margin: 20px auto;
+  position: relative;
+  bottom: 3rem;             
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.show-form-btn:hover {
+  background: #c0392b;
+}
+
+/* Center links and button */
+.show-edit-btn, .show-form-btn {
+  display: block;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+ .show-h3 {
+    font-size: 1.5rem;
+  }
+
+  .show-card {
+    margin: 20px;
+  }
+
+  .show-img {
+    height: 250px;
+  }
+
+ .show-ul {
+    margin: 15px;
+  }
+
+  .show-ul li {
+    font-size: 0.95rem;
+  }
+}
