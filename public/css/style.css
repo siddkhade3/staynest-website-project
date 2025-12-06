@@ -81,7 +81,7 @@ body{
 
 /* Cards */
 
-.card{
+.listing-card{
     border: none !important;
     margin-bottom: 2rem;
 }
@@ -115,7 +115,8 @@ body{
 /* edit page */
 .add-btn{
     color: #ffffff !important;
-    background-color: #fe424d !important;
+    background-color: #0a0909 !important;
+    font-weight: bold !important;
 }
 
 /* show page */
@@ -207,14 +208,14 @@ body{
   display: flex;
   width: 15%;
   text-decoration: none;
-  background: #3498db;
+  background: #3498db; 
   color: white;
   padding: 10px 10px;
   border-radius: 8px;
   margin: 10px auto;
   margin-top: 3rem;
-  text-align: center;
-  transition: background 0.3s ease;
+  text-align: center; 
+  transition: background 0.3s ease; 
 }
 
 
